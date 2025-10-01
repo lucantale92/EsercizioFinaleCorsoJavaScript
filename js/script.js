@@ -36,7 +36,10 @@ document.getElementById("image").innerText = testo;
 	}
 
     function onfocusFunzione (x){
-    x.style.border = "10px solid yellow";
+        let div = document.getElementById("image");
+        let testo = x.alt;
+        div.style.backgroundImage =  "url(" + x.src + ")";
+        document.getElementById("image"). innerText = testo;
     }
 
     function onblurFunzione (x){
